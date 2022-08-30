@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <div class="row">
-        <div class="col-6">
+    <div  class="row">
+        <div id="frm1" class="col-6">
             <h2>Khối lớp 1</h2>
             <span>
                 <input class="basic-slide" id="inpToan" type="text" placeholder="Nhập điểm toán" /><label
@@ -29,11 +29,11 @@
                     for="inpHoa">Hóa</label>
             </span>
             <br>
-            <button id="btnKhoi1" class="btn btn-success">Tính</button>
+            <button id="btnKhoi1" class="btn btn-success"onclick="average()">Tính</button>
             <br>
             <p id="tbKhoi1" class="alert alert-success mt-3"></p>
         </div>
-        <div class="col-6">
+        <div id="frm2" class="col-6">
             <h2>Khối lớp 2</h2>
             <span>
                 <input class="basic-slide" id="inpVan" type="text" placeholder="Nhập điểm văn" /><label
@@ -54,11 +54,16 @@
                     for="inpEnglish">English</label>
             </span>
             <br>
-            <button id="btnKhoi2" class="btn btn-success">Tính</button>
+            <button id="btnKhoi2" class="btn btn-success" onclick="average()">Tính</button>
             
             <p id="tbKhoi2" class="alert alert-success mt-3"></p>
         </div>
     </div>
+   <!-- <style>
+    #frm1 input,#frm2 input{
+        background-color: red;
+    }
+   </style> -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
